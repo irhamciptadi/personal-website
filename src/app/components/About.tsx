@@ -187,25 +187,27 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.7 + index * 0.1 }}
                 viewport={{ once: true }}
               >
-                {/* Experience Header - Clickable */}
+                {/* Company Header - Clickable */}
                 <button
                   onClick={() => toggleJob(index)}
                   className="w-full px-6 py-5 text-left hover:bg-white/30 dark:hover:bg-neutral-700/20 transition-colors"
                 >
                   <div className="flex items-center justify-between gap-4">
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-lg lg:text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-1 truncate">
-                        {exp.role}
+                      <h4 className="text-lg lg:text-xl font-bold text-neutral-800 dark:text-neutral-100 mb-1">
+                        {exp.company}
                       </h4>
                       <p className="text-sm font-medium text-purple-600 dark:text-purple-400">
-                        {exp.company}
+                        {exp.roles.length > 1
+                          ? `${exp.roles.length} roles`
+                          : exp.roles[0].title}
                       </p>
                     </div>
                     <div className="flex items-center gap-3 shrink-0">
                       <div className="flex items-center space-x-2 text-xs text-neutral-500 dark:text-neutral-400">
                         <Calendar size={14} />
                         <span className="font-medium whitespace-nowrap">
-                          {exp.period}
+                          {exp.totalPeriod}
                         </span>
                       </div>
                       <motion.div
@@ -222,7 +224,7 @@ export default function About() {
                   </div>
                 </button>
 
-                {/* Experience Description - Collapsible */}
+                {/* Roles Timeline - Collapsible */}
                 <AnimatePresence initial={false}>
                   {isJobExpanded(index) && (
                     <motion.div
@@ -231,27 +233,59 @@ export default function About() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
                     >
-                      <div className="px-6 pb-5 pt-2 space-y-2 border-t border-neutral-200/50 dark:border-neutral-700/50">
-                        {exp.desc.map((item, descIndex) => (
-                          <motion.div
-                            key={descIndex}
-                            className="flex items-start space-x-2"
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{
-                              duration: 0.3,
-                              delay: descIndex * 0.05,
-                            }}
-                          >
-                            <CheckCircle
-                              size={14}
-                              className="text-green-500 shrink-0 mt-0.5"
-                            />
-                            <span className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                              {item}
-                            </span>
-                          </motion.div>
-                        ))}
+                      <div className="px-6 pb-5 pt-2 border-t border-neutral-200/50 dark:border-neutral-700/50">
+                        {/* Timeline Container */}
+                        <div className="space-y-6">
+                          {exp.roles.map((role, roleIndex) => (
+                            <div key={roleIndex} className="relative pl-6">
+                              {/* Timeline Line (only if not last role) */}
+                              {roleIndex < exp.roles.length - 1 && (
+                                <div className="absolute left-[7px] top-6 bottom-0 w-0.5 bg-linear-to-b from-purple-400 to-purple-200 dark:from-purple-600 dark:to-purple-800" />
+                              )}
+
+                              {/* Timeline Dot */}
+                              <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-purple-500 dark:bg-purple-400 border-2 border-white dark:border-neutral-800 shadow-lg" />
+
+                              {/* Role Content */}
+                              <div className="space-y-3">
+                                {/* Role Header */}
+                                <div>
+                                  <h5 className="text-base font-semibold text-neutral-800 dark:text-neutral-100">
+                                    {role.title}
+                                  </h5>
+                                  <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1 flex items-center gap-1.5">
+                                    <Calendar size={12} />
+                                    {role.period}
+                                  </p>
+                                </div>
+
+                                {/* Role Descriptions */}
+                                <div className="space-y-2">
+                                  {role.desc.map((item, descIndex) => (
+                                    <motion.div
+                                      key={descIndex}
+                                      className="flex items-start space-x-2"
+                                      initial={{ opacity: 0, x: -10 }}
+                                      animate={{ opacity: 1, x: 0 }}
+                                      transition={{
+                                        duration: 0.3,
+                                        delay: descIndex * 0.05,
+                                      }}
+                                    >
+                                      <CheckCircle
+                                        size={14}
+                                        className="text-green-500 shrink-0 mt-0.5"
+                                      />
+                                      <span className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                                        {item}
+                                      </span>
+                                    </motion.div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
                       </div>
                     </motion.div>
                   )}
