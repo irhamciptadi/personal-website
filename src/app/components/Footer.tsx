@@ -62,9 +62,11 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div>
-              <h3 className="text-2xl lg:text-3xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                ICIP
-              </h3>
+              <div className="flex items-center gap-3 mb-4">
+                <h3 className="text-2xl lg:text-3xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  ICIP
+                </h3>
+              </div>
               <p className="text-neutral-400 leading-relaxed max-w-md">
                 {language === "id"
                   ? "Menciptakan pengalaman digital yang memukau dengan teknologi modern dan desain yang thoughtful."

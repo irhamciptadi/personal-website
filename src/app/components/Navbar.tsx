@@ -75,12 +75,16 @@ export default function Navbar() {
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <motion.div
-            className="font-bold text-xl lg:text-2xl bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+          <motion.a
+            href="#home"
+            onClick={(e) => handleNavClick(e, "#home")}
+            className="flex items-center gap-2 cursor-pointer"
             whileHover={{ scale: 1.05 }}
           >
-            ICIP
-          </motion.div>
+            <span className="font-bold text-xl lg:text-2xl bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              ICIP
+            </span>
+          </motion.a>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
