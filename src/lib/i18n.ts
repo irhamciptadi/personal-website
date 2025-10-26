@@ -98,7 +98,7 @@ export const i18n = {
           totalPeriod: "Project Based (Jan 2018 – March 2019)",
           roles: [
             {
-              title: "Full Stack Developer",
+              title: "Full-Stack Software Engineer",
               period: "Project Based (Jan 2018 – March 2019)",
               desc: [],
             },
@@ -109,7 +109,7 @@ export const i18n = {
           totalPeriod: "Aug 2017 – Dec 2018",
           roles: [
             {
-              title: "Full Stack Developer",
+              title: "Full-Stack Software Engineer",
               period: "Aug 2017 – Dec 2018",
               desc: [
                 // "Developed web applications using PHP and CodeIgniter",
@@ -266,7 +266,7 @@ export const i18n = {
           totalPeriod: "Project Based (Jan 2018 – Maret 2019)",
           roles: [
             {
-              title: "Full Stack Developer",
+              title: "Full-Stack Software Engineer",
               period: "Project Based (Jan 2018 – Maret 2019)",
               desc: [],
             },
@@ -277,7 +277,7 @@ export const i18n = {
           totalPeriod: "Agu 2017 – Des 2018",
           roles: [
             {
-              title: "Full Stack Developer",
+              title: "Full-Stack Software Engineer",
               period: "Agu 2017 – Des 2018",
               desc: [
                 "Mengembangkan aplikasi web menggunakan PHP dan CodeIgniter",

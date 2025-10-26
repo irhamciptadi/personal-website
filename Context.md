@@ -155,7 +155,7 @@ export const i18n = {
       experience: [
         {
           company: "Salam Enterprise",
-          role: "Full-Stack Developer",
+          role: "Full-Stack Software Engineer",
           period: "2020 – Present",
           desc: [
             "Support problem user",
@@ -189,7 +189,7 @@ export const i18n = {
       experience: [
         {
           company: "Salam Enterprise",
-          role: "Full-Stack Developer",
+          role: "Full-Stack Software Engineer",
           period: "2020 – Sekarang",
           desc: [
             "Membantu menyelesaikan masalah user",

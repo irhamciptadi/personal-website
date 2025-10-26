@@ -1,7 +1,7 @@
 {
   "name": "Irham Ciptadi Portfolio",
-  "short_name": "Irham.dev",
-  "description": "Modern bilingual portfolio of Irham Ciptadi - Full-Stack Web Developer",
+  "short_name": "ICIP",
+  "description": "Portfolio website of Irham Ciptadi, a software engineer specializing in web development and database management.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

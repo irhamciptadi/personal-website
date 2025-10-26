@@ -10,7 +10,7 @@ const siteUrl =
 
 export const metadata: Metadata = {
   title: {
-    default: "Irham Ciptadi — Software Engineer | Full Stack Developer",
+    default: "Irham Ciptadi — Full-Stack Software Engineer | Web Developer",
     template: "%s | Irham Ciptadi",
   },
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: [
     "Irham Ciptadi",
     "Software Engineer",
-    "Full Stack Developer",
+    "Full-Stack Software Engineer",
     "PHP Developer",
     "Node.js Developer",
     "Vue.js Developer",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     alternateLocale: "id_ID",
     url: siteUrl,
-    title: "Irham Ciptadi — Software Engineer | Full Stack Developer",
+    title: "Irham Ciptadi — Full-Stack Software Engineer | Web Developer",
     description:
       "Software Engineer with 7+ years of experience specializing in PHP, Node.js, Vue.js, React.js. Expert in building insurance automation systems, financial applications, and RESTful APIs.",
     siteName: "Irham Ciptadi Portfolio",
@@ -61,13 +61,13 @@ export const metadata: Metadata = {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Irham Ciptadi - Software Engineer & Full Stack Developer",
+        alt: "Irham Ciptadi — Full-Stack Software Engineer | Web Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Irham Ciptadi — Software Engineer | Full Stack Developer",
+    title: "Irham Ciptadi — Full-Stack Software Engineer | Web Developer",
     description:
       "Software Engineer with 7+ years of experience specializing in PHP, Node.js, Vue.js, React.js. Expert in building insurance automation systems and financial applications.",
     images: ["/og-image.jpg"],

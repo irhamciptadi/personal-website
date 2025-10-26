@@ -63,7 +63,7 @@ export default function Footer() {
           >
             <div>
               <h3 className="text-2xl lg:text-3xl font-bold bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                Irham.dev
+                ICIP
               </h3>
               <p className="text-neutral-400 leading-relaxed max-w-md">
                 {language === "id"

@@ -79,7 +79,7 @@ export default function Navbar() {
             className="font-bold text-xl lg:text-2xl bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
             whileHover={{ scale: 1.05 }}
           >
-            Irham.dev
+            ICIP
           </motion.div>
 
           {/* Desktop Navigation */}
