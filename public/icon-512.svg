@@ -6,32 +6,32 @@
       <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
     </linearGradient>
   </defs>
-  
+
   <rect width="280" height="280" fill="#ffffff" rx="60"/>
   <circle cx="140" cy="140" r="115" stroke="url(#grad)" stroke-width="2" fill="none" opacity="0.15"/>
   <circle cx="140" cy="140" r="100" fill="url(#grad)" opacity="0.08"/>
-  
+
   <g>
     <rect x="50" y="90" width="16" height="100" rx="3" fill="url(#grad)"/>
     <rect x="45" y="90" width="26" height="8" rx="2" fill="url(#grad)"/>
     <rect x="45" y="182" width="26" height="8" rx="2" fill="url(#grad)"/>
-    
-    <path d="M 125 105 A 35 35 0 0 0 90 140 A 35 35 0 0 0 125 175" 
-          stroke="url(#grad)" 
-          stroke-width="16" 
-          stroke-linecap="round" 
+
+    <path d="M 125 105 A 35 35 0 0 0 90 140 A 35 35 0 0 0 125 175"
+          stroke="url(#grad)"
+          stroke-width="16"
+          stroke-linecap="round"
           fill="none"/>
-    
+
     <rect x="147" y="90" width="16" height="100" rx="3" fill="url(#grad)"/>
     <rect x="142" y="90" width="26" height="8" rx="2" fill="url(#grad)"/>
     <rect x="142" y="182" width="26" height="8" rx="2" fill="url(#grad)"/>
-    
+
     <rect x="195" y="90" width="16" height="100" rx="3" fill="url(#grad)"/>
     <rect x="190" y="90" width="26" height="8" rx="2" fill="url(#grad)"/>
-    <path d="M 203 98 L 218 98 A 28 28 0 0 1 218 135 L 203 135" 
-          stroke="url(#grad)" 
-          stroke-width="16" 
-          stroke-linecap="round" 
+    <path d="M 203 98 L 218 98 A 28 28 0 0 1 218 135 L 203 135"
+          stroke="url(#grad)"
+          stroke-width="16"
+          stroke-linecap="round"
           fill="none"/>
   </g>
 </svg>
