@@ -42,19 +42,5 @@
   "dir": "ltr",
   "prefer_related_applications": false,
   "display_override": ["window-controls-overlay", "standalone"],
-  "edge_side_panel": {},
-  "screenshots": [
-    {
-      "src": "/screenshot-wide.jpg",
-      "sizes": "1280x720",
-      "type": "image/jpeg",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/screenshot-narrow.jpg",
-      "sizes": "390x844",
-      "type": "image/jpeg",
-      "form_factor": "narrow"
-    }
-  ]
+  "edge_side_panel": {}
 }
