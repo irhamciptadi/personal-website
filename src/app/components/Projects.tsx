@@ -1,6 +1,12 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, X, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  X,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { i18n } from "../../lib/i18n";
 import { useLanguage } from "../../lib/LanguageProvider";
 import { useState } from "react";
@@ -8,11 +14,11 @@ import { useState } from "react";
 export default function Projects() {
   const { language } = useLanguage();
   const t = i18n[language as keyof typeof i18n];
-  
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
   const [currentScreenshot, setCurrentScreenshot] = useState(0);
-  
+
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -187,7 +193,7 @@ export default function Projects() {
               key={project.title}
               className={`group bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg border border-neutral-200 dark:border-neutral-700 hover:shadow-2xl transition-all duration-500 ${
                 index === 1 && currentProjects.length === 3
-                  ? "md:scale-110 md:z-10 md:shadow-xl" 
+                  ? "md:scale-110 md:z-10 md:shadow-xl"
                   : ""
               }`}
               initial={{ opacity: 0, y: 20 }}
@@ -197,16 +203,22 @@ export default function Projects() {
               whileHover={{ y: -10 }}
             >
               {/* Project Image */}
-              <div className={`relative overflow-hidden ${
-                index === 1 && currentProjects.length === 3 ? "h-64" : "h-48"
-              }`}>
+              <div
+                className={`relative overflow-hidden ${
+                  index === 1 && currentProjects.length === 3 ? "h-64" : "h-48"
+                }`}
+              >
                 <div
                   className={`w-full h-full bg-linear-to-br ${project.gradient} flex items-center justify-center`}
                 >
                   <div className="w-4/5 h-4/5 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
-                    <span className={`text-white font-bold ${
-                      index === 1 && currentProjects.length === 3 ? "text-6xl" : "text-4xl"
-                    }`}>
+                    <span
+                      className={`text-white font-bold ${
+                        index === 1 && currentProjects.length === 3
+                          ? "text-6xl"
+                          : "text-4xl"
+                      }`}
+                    >
                       {startIndex + index + 1}
                     </span>
                   </div>
@@ -317,15 +329,15 @@ export default function Projects() {
             >
               <ChevronLeft className="w-5 h-5 text-neutral-600 dark:text-neutral-300" />
             </motion.button>
-            
+
             <div className="flex space-x-2">
               {Array.from({ length: totalSlides }, (_, i) => (
                 <motion.button
                   key={i}
                   onClick={() => goToSlide(i)}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                    currentSlide === i 
-                      ? "bg-blue-500" 
+                    currentSlide === i
+                      ? "bg-blue-500"
                       : "bg-neutral-300 dark:bg-neutral-600 hover:bg-neutral-400 dark:hover:bg-neutral-500"
                   }`}
                   whileHover={{ scale: 1.2 }}
@@ -333,7 +345,7 @@ export default function Projects() {
                 />
               ))}
             </div>
-            
+
             <motion.button
               onClick={nextSlide}
               className="p-3 bg-white dark:bg-neutral-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 border border-neutral-200 dark:border-neutral-700"
@@ -344,8 +356,6 @@ export default function Projects() {
             </motion.button>
           </motion.div>
         )}
-
-
 
         {/* Project Detail Modal */}
         <AnimatePresence>
