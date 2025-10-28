@@ -158,6 +158,8 @@ export const i18n = {
       previous: "Previous",
       next: "Next",
       showingProjects: "Showing {{start}}-{{end}} of {{total}} projects",
+      viewAllProjects: "View All Projects",
+      backToHome: "Back to Home View",
     },
     contact: {
       title: "Let's Work Together",
@@ -333,6 +335,8 @@ export const i18n = {
       previous: "Sebelumnya",
       next: "Selanjutnya",
       showingProjects: "Menampilkan {{start}}-{{end}} dari {{total}} proyek",
+      viewAllProjects: "Lihat Semua Proyek",
+      backToHome: "Kembali ke Beranda",
     },
     contact: {
       title: "Mari Bekerja Sama",
