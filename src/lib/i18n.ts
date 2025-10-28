@@ -12,14 +12,13 @@ export const i18n = {
       name: "Irham Ciptadi",
       role: "Full-Stack Software Engineer",
       description:
-        "Bridging code, business, and meaning — crafting digital systems that work and stories that inspire.",
+        "Bridging code, business, and impact — crafting digital systems that work and stories that inspire.",
       cta: "Get In Touch",
     },
     about: {
       title: "About",
       body: [
         "I'm Irham Ciptadi, a Full-Stack Software Engineer who has experience building reliable and data-driven systems — particularly in insurance, finance, and enterprise platforms.",
-        "Since 2015, I've worked across backend and frontend development, crafting products that simplify workflows, improve risk assessment, and empower decision-making.",
         "My focus is not just writing code, but solving complex operational challenges: integrating workflows, improving efficiency, and translating real-world business needs into digital systems that scale.",
       ],
       technologiesIntro: "Some technologies and practices I'm familiar with:",
@@ -33,6 +32,7 @@ export const i18n = {
         "BullMQ",
         "CodeIgniter",
         "Express.js",
+        "NestJS",
         "Laravel",
         "PostgreSQL",
         "MySQL",
@@ -52,7 +52,7 @@ export const i18n = {
       ],
       highlights: [
         "Frontend: Vue.js, React.js, JavaScript, TypeScript",
-        "Backend: PHP, Node.js, CodeIgniter, Express.js, Laravel",
+        "Backend: PHP, Node.js, CodeIgniter, Express.js, NestJS, Laravel",
         "Database: PostgreSQL, MySQL, Redis, Microsoft SQL Server",
         "Cloud & DevOps: Linux Server, Docker",
         "Queue Management: BullMQ",
@@ -98,7 +98,7 @@ export const i18n = {
           totalPeriod: "Project Based (Jan 2018 – March 2019)",
           roles: [
             {
-              title: "Full-Stack Software Engineer",
+              title: "Web Programmer",
               period: "Project Based (Jan 2018 – March 2019)",
               desc: [],
             },
@@ -153,17 +153,24 @@ export const i18n = {
       title: "Projects showcase",
       viewProject: "View Project",
       viewCode: "View Code",
+      viewDetails: "View Details",
+      close: "Close",
+      previous: "Previous",
+      next: "Next",
+      showingProjects: "Showing {{start}}-{{end}} of {{total}} projects",
     },
     contact: {
       title: "Let's Work Together",
       description:
-        "Have a project in mind? Let's discuss how we can bring your ideas to life.",
+        "Have an idea or project you’d like to build? I’d love to discuss how we can bring it to life.",
       name: "Your Name",
       email: "Your Email",
       message: "Your Message",
       send: "Send Message",
     },
     footer: {
+      description:
+        "Bridging code, business, and impact — crafting digital systems that work and stories that inspire.",
       copyright: "© 2024 Irham Ciptadi. All rights reserved.",
     },
   },
@@ -180,14 +187,13 @@ export const i18n = {
       name: "Irham Ciptadi",
       role: "Full-Stack Software Engineer",
       description:
-        "Menghubungkan teknologi, bisnis, dan makna — membangun sistem digital yang bermanfaat dan inspiratif.",
+        "Menghubungkan teknologi, bisnis, dan dampak — membangun sistem digital yang bermanfaat dan inspiratif.",
       cta: "Hubungi Saya",
     },
     about: {
       title: "Tentang",
       body: [
         "Saya Irham Ciptadi, seorang Full-Stack Software Engineer dengan pengalaman membangun sistem yang handal dan berbasis data — khususnya di bidang asuransi, keuangan, dan platform enterprise.",
-        "Sejak 2015, saya bekerja di pengembangan backend dan frontend, menciptakan produk yang menyederhanakan alur kerja, meningkatkan penilaian risiko, dan memberdayakan pengambilan keputusan.",
         "Fokus saya bukan hanya menulis kode, tetapi menyelesaikan tantangan operasional yang kompleks: mengintegrasikan alur kerja, meningkatkan efisiensi, dan menerjemahkan kebutuhan bisnis nyata menjadi sistem digital yang dapat berkembang.",
       ],
       technologiesIntro: "Teknologi dan tools yang saya gunakan:",
@@ -201,6 +207,7 @@ export const i18n = {
         "BullMQ",
         "CodeIgniter",
         "Express.js",
+        "NestJS",
         "Laravel",
         "PostgreSQL",
         "MySQL",
@@ -220,7 +227,7 @@ export const i18n = {
       ],
       highlights: [
         "Frontend: Vue.js, React.js, JavaScript, TypeScript",
-        "Backend: PHP, Node.js, CodeIgniter, Express.js, Laravel",
+        "Backend: PHP, Node.js, CodeIgniter, Express.js, NestJS, Laravel",
         "Database: PostgreSQL, MySQL, Redis, Microsoft SQL Server",
         "Cloud & DevOps: Linux Server, Docker",
         "Queue Management: BullMQ",
@@ -266,7 +273,7 @@ export const i18n = {
           totalPeriod: "Project Based (Jan 2018 – Maret 2019)",
           roles: [
             {
-              title: "Full-Stack Software Engineer",
+              title: "Web Programmer",
               period: "Project Based (Jan 2018 – Maret 2019)",
               desc: [],
             },
@@ -321,17 +328,24 @@ export const i18n = {
       title: "Showcase Proyek",
       viewProject: "Lihat Proyek",
       viewCode: "Lihat Kode",
+      viewDetails: "Lihat Detail",
+      close: "Tutup",
+      previous: "Sebelumnya",
+      next: "Selanjutnya",
+      showingProjects: "Menampilkan {{start}}-{{end}} dari {{total}} proyek",
     },
     contact: {
       title: "Mari Bekerja Sama",
       description:
-        "Punya proyek dalam pikiran? Mari diskusikan bagaimana kita bisa mewujudkan ide Anda.",
+        "Punya ide atau proyek yang ingin dikembangkan? Ayo bicarakan bagaimana kita bisa mewujudkannya bersama.",
       name: "Nama Anda",
       email: "Email Anda",
       message: "Pesan Anda",
       send: "Kirim Pesan",
     },
     footer: {
+      description:
+        "Menghubungkan teknologi, bisnis, dan dampak — membangun sistem digital yang bermanfaat dan inspiratif.",
       copyright: "© 2024 Irham Ciptadi. Hak cipta dilindungi.",
     },
   },

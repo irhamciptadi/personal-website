@@ -68,9 +68,7 @@ export default function Footer() {
                 </h3>
               </div>
               <p className="text-neutral-400 leading-relaxed max-w-md">
-                {language === "id"
-                  ? "Menciptakan pengalaman digital yang memukau dengan teknologi modern dan desain yang thoughtful."
-                  : "Creating stunning digital experiences with modern technology and thoughtful design."}
+                {t.footer.description}
               </p>
             </div>
 
